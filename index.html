@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h1>Dice Game</h1>
+    <h2 class="result" id="result">Roll the dice to play!</h2>
+
+    <div class="container">
+      <div class="player-container">
+
+        <div class="player-name">
+          <input type="text" id="player-name" value="Player 1">
+        </div>
+        <div class="dice-container">
+          <img src="./images/dice1.png" alt="player-dice" id="player-dice">
+        </div>
+        <p>Your Roll: <span id="player-score">0</span>
+        </p>
+      </div>
+      <div class="player-container">
+        <div class="player-name">
+          <p>AI</p>
+        </div>
+
+        <div class="dice-container">
+          <img src="./images/dice1.png" alt="ai-dice" id="ai-dice">
+        </div>
+        <p>AI Roll: <span id="ai-score">0</span>
+        </p>
+      </div>
+    </div>
+    <button class="roll" id="roll">Roll</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
